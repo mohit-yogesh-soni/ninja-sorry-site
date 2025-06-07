@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  font-family: 'Comic Sans MS', cursive;
+  background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+  text-align: center;
+  color: #333;
+}
+
+.container {
+  padding: 40px;
+}
+
+.hattori {
+  width: 200px;
+  animation: float 2s infinite ease-in-out;
+}
+
+.ding {
+  font-size: 2em;
+  color: #ff4081;
+  margin-top: 20px;
+  animation: pulse 1s infinite;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 20px;
+  background: #ffeb3b;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+a {
+  display: block;
+  margin-top: 20px;
+  font-weight: bold;
+  color: #0d47a1;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
